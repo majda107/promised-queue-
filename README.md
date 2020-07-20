@@ -7,7 +7,7 @@ Simple asynchronous Javascript / Typescript queue with repetition check for soci
 
 ## Usage
 ```typescript
-import { PromisedQueue, RepetitionPromisedQueue } from "promised-queue";
+import { PromisedQueue, RepetitionPromisedQueue } from "queue-i-promised";
 
 const pq = new PromiseQueue();
 const rpq = new RepetitionPromisedQueue(2);
