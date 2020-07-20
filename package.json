@@ -2,9 +2,11 @@
   "name": "promised-queue",
   "version": "1.0.0",
   "description": "Simple lightweight promise task queue with repetition check, great for \"social-media\" server calls management\"",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
