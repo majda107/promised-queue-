@@ -3,7 +3,7 @@
 Simple asynchronous Javascript / Typescript queue with repetition check for social-media like actions (liking, subscribing...)
 
 ## Installation
-`npm install promised-queue --save`
+`npm install queue-i-promised --save`
 
 ## Usage
 ```typescript
