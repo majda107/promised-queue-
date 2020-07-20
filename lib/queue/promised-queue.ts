@@ -6,7 +6,7 @@ export class PromisedQueue {
     private doneCallback: () => any;
     private errorCallback: (e: any) => any;
 
-    constructor(done = () => {}, error = (e: any) => {}) {
+    constructor(done = () => { }, error = (e: any) => { }) {
         this.queue = [];
         this.working = false;
 
@@ -19,15 +19,19 @@ export class PromisedQueue {
         await this.dequeue();
     };
 
+    protected dequeueTask(tasks: (() => Promise<any>)[]): (() => Promise<any>) | undefined {
+        return tasks.shift();
+    };
+
     private async dequeue() {
 
-        if(this.working) return;
+        if (this.working) return;
         this.working = true;
 
-        const work = this.queue.shift();
+        const work = this.dequeueTask(this.queue);
 
         // IF QUEUE IS DONE
-        if(work === undefined) {
+        if (work === undefined) {
             this.working = false;
             this.doneCallback();
             return;
@@ -35,7 +39,7 @@ export class PromisedQueue {
 
         try {
             await work();
-        } catch(e) {
+        } catch (e) {
             this.errorCallback(e);
 
             this.queue = [];
