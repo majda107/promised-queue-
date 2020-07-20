@@ -1,0 +1,28 @@
+{
+  "name": "promised-queue",
+  "version": "1.0.0",
+  "description": "Simple lightweight promise task queue with repetition check, great for \"social-media\" server calls management\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/majda107/promised-queue-.git"
+  },
+  "keywords": [
+    "queue",
+    "lightweight",
+    "task",
+    "job",
+    "social",
+    "media",
+    "state"
+  ],
+  "author": "majda107",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majda107/promised-queue-/issues"
+  },
+  "homepage": "https://github.com/majda107/promised-queue-#readme"
+}
