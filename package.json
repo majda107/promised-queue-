@@ -1,6 +1,6 @@
 {
   "name": "queue-i-promised",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple lightweight promise task queue with repetition check, great for \"social-media\" server calls management\"",
   "main": "dist/index.js",
   "types" : "dist/index.d.ts",
