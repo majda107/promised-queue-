@@ -1,3 +1,1 @@
-export function Test(): any {
-    console.log("TEST");
-}
+export { PromisedQueue } from "./queue/promised-queue";
