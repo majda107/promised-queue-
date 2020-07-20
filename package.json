@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/majda107/promised-queue-/issues"
   },
-  "homepage": "https://github.com/majda107/promised-queue-#readme"
+  "homepage": "https://github.com/majda107/promised-queue-#readme",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
 }
